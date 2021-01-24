@@ -38,6 +38,13 @@ class SingleLinkedList:
                 tempNode.next = newNode
                 newNode.next = nextNode
 
+    def delete(self):
+        if self.head is None:
+            print("Single linked list deosnt exist")
+        else:
+            self.head = None
+            self.tail = None
+
 
 class Node:
     def __init__(self, value=None):
@@ -54,6 +61,6 @@ singleLinkedList.insertSLL(40, 2)
 # singleLinkedList.insertSLL(0, 8)
 # singleLinkedList.insertSLL(10,1)
 # singleLinkedList.insertSLL(10,1)
-
+singleLinkedList.delete()
 
 print([node.value for node in singleLinkedList])
