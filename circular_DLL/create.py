@@ -30,18 +30,6 @@ class CircularDoubleLinkedList:
         self.head = newNode
         return "Circular double linked list has been created"
 
-    def inserDLL(self,value,location):
-        if self.head == None:
-            return "Circular double LL doesnt exist"
-        else:
-            newNode = Node(value=value)
-            if location == 0:
-                
-
-
-
-
-
 
 
 

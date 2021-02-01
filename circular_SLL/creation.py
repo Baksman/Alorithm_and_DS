@@ -21,7 +21,7 @@ class CirculaLinkedList:
             if node.next == self.tail.next:
                 break
 
-    def cerateCSLL(self, value):
+    def createCSLL(self, value):
         newNode = Node(value=value)
         newNode.next = newNode
         self.tail = newNode
@@ -37,7 +37,7 @@ class CirculaLinkedList:
 
 
 circularSLL = CirculaLinkedList()
-print(circularSLL.cerateCSLL(1))
+print(createCSLL.cerateCSLL(1))
 
 [node.value for node in circularSLL]
 
