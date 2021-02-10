@@ -1,6 +1,4 @@
 
-# there are basically two types of graph traversal DFS
-# BFS traversal
 
 class Graph:
     def __init__(self, gdict=None):
@@ -16,6 +14,7 @@ class Graph:
         queue = [vertex]
 
         while queue:
+            # Note we used pop(0) which makes it look like queeu {remove first} known as dqueue
             deVertex = queue.pop(0)
             print(deVertex)
 
@@ -23,6 +22,18 @@ class Graph:
                 if adjacentVertex not in visited:
                     visited.append(adjacentVertex)
                     queue.append(adjacentVertex)
+
+    def defs(self, vertex):
+        visited = [vertex]
+        stack = [vertex]
+        while stack:
+            # Note we used pop() which makes it look like stack {remove last}
+            popVertex = stack.pop()
+            print(popVertex)
+            for adjacentVertex in self.gdict[popVertex]:
+                if adjacentVertex not in visited:
+                    visited.append(adjacentVertex)
+                    stack.append(adjacentVertex)
 
 
 customDict = {
@@ -36,5 +47,6 @@ customDict = {
 }
 
 graph = Graph(customDict)
-graph.addEdge("e", "c")
-print(graph.gdict)
+
+
+graph.bfs("a")
