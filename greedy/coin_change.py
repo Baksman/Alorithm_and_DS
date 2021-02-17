@@ -2,7 +2,7 @@
 def coinChange(totalNumber, coins):
     N = totalNumber
     coins.sort()
-    # highest number in the list
+    # max number in the list
     index = len(coins) - 1
 
     while True:
@@ -17,4 +17,5 @@ def coinChange(totalNumber, coins):
             break
 
 
-coins = [1,2,5,20,50,100]
+coins = [1, 2, 5, 20, 50, 100]
+coinChange(200,coins=coins)

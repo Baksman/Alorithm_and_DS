@@ -6,9 +6,6 @@
 # a.Stable .. doesnt change sequence of identical item
 # b.Unstable .. changes sequence of identical item e.q quick sort
 
-"""
-"""
-
 
 def bubbleSort(customList):
     for i in range(len(customList)-1):
@@ -16,12 +13,14 @@ def bubbleSort(customList):
             if customList[j] > customList[j+1]:
                 customList[j], customList[j+1] = customList[j+1], customList[j]
 
-    print(customList) 
+    print(customList)
 
 
 customList = [10, 59, 588, 440, 283, 99, 33, 3839]
 # bubbleSort(customList)
 # 1,2,3,4,5,6,7,8,9
+
+
 def bbSort(cList):
     for i in range(len(customList)):
         i += 1
