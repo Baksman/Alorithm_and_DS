@@ -1,5 +1,5 @@
-# 0,1,1,2,3,5,8,13,21,34,55
-# e.g sum of 45 
+# number of ways to express n as a sum of 1,3,4
+ 
 def numberFactor(n):
     if n in (0, 1, 2):
         return 1
@@ -11,7 +11,5 @@ def numberFactor(n):
         subP2 = numberFactor(n-3)
         subP3 = numberFactor(n-4)
         return subP1+subP2+subP3
-
-
-  
+        
 print(numberFactor(6))

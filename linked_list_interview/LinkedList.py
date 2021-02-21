@@ -42,7 +42,7 @@ class LinkedList:
         else:
             self.tail.next = Node(value)
             self.tail = self.tail.next
-        return self.tail
+        return self.tail 
     
     def generate(self, n, min_value, max_value):
         self.head = None
