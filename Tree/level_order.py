@@ -1,4 +1,4 @@
-
+from queue_datastructure import queue_linkedlist as queue
 
 # traverse tree level by level
 
@@ -21,8 +21,8 @@ newBT.leftChild = leftChild
 newBT.rightChild = rightChild
 
 
- def levelOrderTraversal(rootNode):
-     if not rootNode:
-         return
+def levelOrderTraversal(rootNode):
+    if not rootNode:
+        return
     else:
         customQeue = queue.Queue
