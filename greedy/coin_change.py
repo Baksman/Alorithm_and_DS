@@ -18,4 +18,4 @@ def coinChange(totalNumber, coins):
 
 
 coins = [1, 2, 5, 20, 50, 100]
-coinChange(200,coins=coins)
+coinChange(200, coins=coins)
